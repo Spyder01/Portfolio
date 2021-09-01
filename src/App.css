@@ -1,0 +1,162 @@
+.App {
+  background: #000;
+  overflow-y: auto;
+  user-select: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  transition: all 0.5s linear;
+  
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 5vmax;  
+  transition: all 0.5s linear;
+}
+
+.caption {
+  font-size: 1.3vmax;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.5s linear;
+}
+
+.Main h1 {
+  text-transform: lowercase;
+  font-size: 8vmax;
+  margin: 0;
+  padding: 0;
+  font-family: Calibre-SemiBold, sans-serif;
+  transition: all 0.5s linear;
+  letter-spacing: -0.9vmax;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Main h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 2vmax;
+  transition: all 0.5s linear;
+}
+
+h3 span {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.5%;
+  color: black;
+  background: white;
+  cursor: pointer;
+  animation: shake 0.9s cubic-bezier(.36,.07,.19,.97) both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.aboutMe {
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  color: black;
+  font-size: 10vw;
+  overflow-x: hidden;
+  padding: 5vmax;
+}
+
+img {
+  height: 40vmax;
+}
+
+.aboutMe .mainArea {
+  display: flex;
+}
+
+.aboutMe h1 {
+  font-size:8vmax;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: thin; 
+  margin: 0;
+}
+
+.mainArea .handsome_guy {
+  font-size: 2vmax;
+  padding: 2vmax;
+}
+
+a {
+  color: gray;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vmax; 
+  width: 30vw;
+  text-align: center;
+  align-content: center;
+}
+
+.fab {
+  font-size: 5vmax;
+  text-align: center;
+}
+
+.ContactMe {
+  height: 20vh;
+  color: #797575;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  padding: 5vmax;
+}
+
+.ContactMe .contact {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 2.6vmin;
+}
+
+@media (max-width: 768px) {
+  .aboutMe .mainArea {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+
+}
