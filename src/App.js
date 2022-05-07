@@ -96,6 +96,7 @@ const reBound = ()=>{
 
             <div className="contact">
               <div className='icons'>
+                
              <a href="https://github.com/Spyder01"><span class="fab fa-github"></span></a>
              <a href="https://www.instagram.com/__suhan004/"><span class="fab fa-instagram"></span></a>
              <a href="https://www.linkedin.com/in/suhan-bangera-b75230194/"><span class="fab fa-linkedin"></span></a>
