@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Particles from './components/Particles'
 import NavBar from './components/Navbar'
 import Blob from './components/Blob'
+import Image from './components/Image';
 import './App.css';
 
 var count = 0;
@@ -86,14 +87,14 @@ const reBound = ()=>{
         <h1 className="Heading">About Me</h1>
         <div className='mainArea'>
           <div className='image'>
-            <img alt='Suhan' src="https://lh3.googleusercontent.com/7Z3CvT0ZAjn71P5ANE0IE8ci-G2Ih_Uw0qJu9iUjw-vos9xvSrSRNn4t4JA2xeyCbWPGzjEmGBoFXu3PQ-d2RzjWmZiVpAqRHodoKDWOw806ovPUYpECbJqB2VaFwGTc1O-Hnsaoog"></img>
+            <Image alt='Suhan' src="https://lh3.googleusercontent.com/7Z3CvT0ZAjn71P5ANE0IE8ci-G2Ih_Uw0qJu9iUjw-vos9xvSrSRNn4t4JA2xeyCbWPGzjEmGBoFXu3PQ-d2RzjWmZiVpAqRHodoKDWOw806ovPUYpECbJqB2VaFwGTc1O-Hnsaoog" Loader={()=><></>}></Image>
           </div>
           <div className="handsome_guy">
-            Hi there,  I am Suhan Bangera. Currently pursuing B.E degree in Information Science and Engineering from Ramaiah Institute of Technology. I aspire to mark my name in community of Programming and Software development. Apart from coding, I am interested in writing stories and practicing martial arts. I have authored in number of anthologies while being an active member of Ramaiah Combat Club.
+            Hi there,  I am Suhan Bangera. Currently pursuing B.E degree in Information Science and Engineering from Ramaiah Institute of Technology. I aspire to mark my name in the community of Programming and Software development. Apart from coding, I am interested in writing stories and practicing martial arts. I have co-authored number of anthologies while being an active member of Ramaiah Combat Club.
             <br/>
             To know more about me, visit:
 
-            <div class="contact">
+            <div className="contact">
               <div className='icons'>
              <a href="https://github.com/Spyder01"><span class="fab fa-github"></span></a>
              <a href="https://www.instagram.com/__suhan004/"><span class="fab fa-instagram"></span></a>

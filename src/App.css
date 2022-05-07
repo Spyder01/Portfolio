@@ -55,6 +55,8 @@
   transition: all 0.5s linear;
 }
 
+
+
 h3 span {
   display: inline-flex;
   justify-content: center;
@@ -122,9 +124,8 @@ a {
 
 .icons {
   display: flex;
-  justify-content: space-between;
-  padding-left: 10vmax; 
-  width: 30vw;
+  justify-content: space-between; 
+  width: 250px;
   text-align: center;
   align-content: center;
 }
@@ -156,6 +157,11 @@ a {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .icons {
+    width: 150px;
+    margin-left: 30%;
   }
 
 
